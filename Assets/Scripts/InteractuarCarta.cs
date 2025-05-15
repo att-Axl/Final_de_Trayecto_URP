@@ -8,8 +8,6 @@ public class InteractNotas : MonoBehaviour
     public GameObject textCanvas;           
     public TextMeshProUGUI textoNotaUno;    
     public float distanciaMaxima = 3f;      
-
-
     private bool mostrandoContenido = false;
     private GameObject notaActual = null;
 
