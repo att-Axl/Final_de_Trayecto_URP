@@ -3,13 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-
-public class InteractuarNotas : MonoBehaviour
-{
-    public GameObject textCanvas;          
-    public TextMeshProUGUI textoNotaUno;   
-    public float distanciaMaxima = 3f;     
-
 public class InteractNotas : MonoBehaviour
 {
     public GameObject textCanvas;           
@@ -57,5 +50,4 @@ public class InteractNotas : MonoBehaviour
             Time.timeScale = 1f;
         }
     }
-}
 }
