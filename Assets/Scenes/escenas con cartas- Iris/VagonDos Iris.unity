@@ -4497,7 +4497,7 @@ Transform:
   m_GameObject: {fileID: 583354077}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 6.67, y: 0.96, z: -53.7}
+  m_LocalPosition: {x: 7.38, y: -0.2, z: -45.59}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10811,7 +10811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1409910566
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12092,7 +12092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b7c7e63f1f4ba43a066c3e5c9606a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textCanvas: {fileID: 0}
+  textCanvas: {fileID: 1409910565}
   textoNotaUno: {fileID: 1078611343}
   distanciaMaxima: 3
 --- !u!1 &1601141723
