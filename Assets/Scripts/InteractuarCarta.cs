@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class InteractNotas : MonoBehaviour
+public class InteractuarNotas : MonoBehaviour
 {
     public GameObject textCanvas;          
     public TextMeshProUGUI textoNotaUno;   
