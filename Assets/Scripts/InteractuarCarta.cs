@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class InteractNotas : MonoBehaviour
+
+public class InteractuarNotas : MonoBehaviour
 {
-    public GameObject textCanvas;           
-    public TextMeshProUGUI textoNotaUno;    
-    public float distanciaMaxima = 3f;      
+    public GameObject textCanvas;          
+    public TextMeshProUGUI textoNotaUno;  
+    public float distanciaMaxima = 3f;    
+
     private bool mostrandoContenido = false;
     private GameObject notaActual = null;
 
@@ -22,12 +24,15 @@ public class InteractNotas : MonoBehaviour
             if (hit.collider.CompareTag("Nota"))
             {
                 notaActual = hit.collider.gameObject;
+
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     mostrandoContenido = !mostrandoContenido;
 
                     if (textCanvas != null)
                         textCanvas.SetActive(mostrandoContenido);
+
+             
                     Time.timeScale = mostrandoContenido ? 0f : 1f;
                 }
             }
@@ -41,6 +46,7 @@ public class InteractNotas : MonoBehaviour
             notaActual = null;
         }
 
+    
         if (notaActual == null && textCanvas != null && textCanvas.activeSelf)
         {
             textCanvas.SetActive(false);
