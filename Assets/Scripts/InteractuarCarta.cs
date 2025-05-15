@@ -5,16 +5,15 @@ using TMPro;
 
 public class InteractNotas : MonoBehaviour
 {
-    public GameObject textCanvas;           // Canvas que contiene el texto de la nota
-    public TextMeshProUGUI textoNotaUno;    // Texto dentro del canvas (opcional)
-    public float distanciaMaxima = 3f;      // Distancia máxima de interacción
+    public GameObject textCanvas;           
+    public TextMeshProUGUI textoNotaUno;    
+    public float distanciaMaxima = 3f;      
 
     private bool mostrandoContenido = false;
     private GameObject notaActual = null;
 
     void Update()
     {
-        // Raycast desde la cámara (mirada del jugador)
         Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
         Debug.DrawRay(ray.origin, ray.direction * distanciaMaxima, Color.red);
 
@@ -24,7 +23,6 @@ public class InteractNotas : MonoBehaviour
             {
                 notaActual = hit.collider.gameObject;
 
-                // Presionar E para mostrar/ocultar el canvas y pausar/reanudar
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     mostrandoContenido = !mostrandoContenido;
@@ -32,7 +30,6 @@ public class InteractNotas : MonoBehaviour
                     if (textCanvas != null)
                         textCanvas.SetActive(mostrandoContenido);
 
-                    // Pausar o reanudar el juego
                     Time.timeScale = mostrandoContenido ? 0f : 1f;
                 }
             }
@@ -46,7 +43,6 @@ public class InteractNotas : MonoBehaviour
             notaActual = null;
         }
 
-        // Si deja de mirar la nota, ocultar automáticamente
         if (notaActual == null && textCanvas != null && textCanvas.activeSelf)
         {
             textCanvas.SetActive(false);
