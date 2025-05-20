@@ -7,7 +7,7 @@ using TMPro;
 public class TpPuertaCuatro : MonoBehaviour
 {
 
-    public string nomEscena = "VagonCinco";
+    public string nomEscena = "EstacionFinal";
     public float distanciaMaxima = 2f;
     public TextMeshProUGUI textoE;
 
