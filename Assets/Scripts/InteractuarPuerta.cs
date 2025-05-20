@@ -8,7 +8,7 @@ public class InteractuarPuerta : MonoBehaviour
     public GameObject mensajeNecesitasLlave;
     public Transform Door_A;
 
-    public Animator animator;
+    private Animator animator;
     private bool PuertaDingus = false;
 
 
@@ -53,24 +53,31 @@ public class InteractuarPuerta : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("No tienes llave");
+                       Debug.Log("No tienes llave");
+                        if (mensajeNecesitasLlave != null)
+                        {
+                            Debug.Log("Mostrando mensaje: Necesitas llave");
+                            mensajeNecesitasLlave.SetActive(true);
+                        }
                     }
                 }
             }
             else
             {
-
+              
                 if (mensajeNecesitasLlave != null && mensajeNecesitasLlave.activeSelf)
+                {
                     mensajeNecesitasLlave.SetActive(false);
+                }
             }
         }
         else
         {
-
+      
             if (mensajeNecesitasLlave != null && mensajeNecesitasLlave.activeSelf)
+            {
                 mensajeNecesitasLlave.SetActive(false);
+            }
         }
     }
-
 }
-    
