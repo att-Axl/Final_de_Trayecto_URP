@@ -6588,9 +6588,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da658ad0a99142f45a341411079d68c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomEscena: VagonCinco
+  nomEscena: EstacionFinal
   distanciaMaxima: 2
-  textoE: {fileID: 0}
+  textoE: {fileID: 1704622476}
 --- !u!1 &1634206498
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,8 +6751,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.010093246, y: 0.016322209, z: 0.024755444}
-  m_Center: {x: -0.004040901, y: -0.003530105, z: -0.00035295365}
+  m_Size: {x: 0.010093246, y: 0.021367272, z: 0.02645709}
+  m_Center: {x: -0.004040901, y: -0.001007539, z: 0.00049786986}
 --- !u!1 &1668346237
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,7 +6939,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704622474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -915.2}
+  m_LocalPosition: {x: 0, y: 0, z: -526.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6947,7 +6947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.89, y: -8.02}
+  m_AnchoredPosition: {x: -1.1, y: -8.02}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704622476
@@ -8540,9 +8540,9 @@ SceneRoots:
   - {fileID: 1774993342}
   - {fileID: 51118374}
   - {fileID: 1209809727}
-  - {fileID: 1562352738}
   - {fileID: 2011229219}
   - {fileID: 1395926314}
   - {fileID: 1151469997}
   - {fileID: 1415154285}
   - {fileID: 1962402714}
+  - {fileID: 1562352738}
