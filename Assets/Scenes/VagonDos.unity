@@ -4105,6 +4105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492010690}
   - component: {fileID: 492010691}
+  - component: {fileID: 492010692}
   m_Layer: 0
   m_Name: BlackManMullet
   m_TagString: Untagged
@@ -4202,6 +4203,27 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.029223785, y: 0.10983637, z: 0.30971688}
     m_Extent: {x: 0.37542653, y: 0.68357515, z: 0.4597352}
   m_DirtyAABB: 0
+--- !u!95 &492010692
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492010689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bff933a7ad9fc44bb5eb26f17c93e95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &499326848
 GameObject:
   m_ObjectHideFlags: 0
@@ -6347,6 +6369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 824108444}
+  - component: {fileID: 824108445}
   m_Layer: 0
   m_Name: Sitting (6)
   m_TagString: Untagged
@@ -6371,6 +6394,27 @@ Transform:
   - {fileID: 1183343570}
   m_Father: {fileID: 166900773}
   m_LocalEulerAnglesHint: {x: 0, y: 272.083, z: 0}
+--- !u!95 &824108445
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824108443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e04eda97fd28ca4f8e6bc4ca9e8df1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &824932367
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,6 +7091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 924640281}
+  - component: {fileID: 924640282}
   m_Layer: 0
   m_Name: Male Sitting Pose (2)
   m_TagString: Untagged
@@ -7071,6 +7116,27 @@ Transform:
   - {fileID: 1660774222}
   m_Father: {fileID: 166900773}
   m_LocalEulerAnglesHint: {x: 0, y: 80.594, z: 0}
+--- !u!95 &924640282
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924640280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bff933a7ad9fc44bb5eb26f17c93e95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &924802469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8630,6 +8696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1148743036}
   - component: {fileID: 1148743037}
+  - component: {fileID: 1148743038}
   m_Layer: 0
   m_Name: male_player
   m_TagString: Untagged
@@ -8737,6 +8804,27 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00019333744, y: 0.0022877264, z: 0.0030832146}
     m_Extent: {x: 0.0040310235, y: 0.007445142, z: 0.0048478865}
   m_DirtyAABB: 0
+--- !u!95 &1148743038
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148743035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c8a3a16942e51ae4c8de95dda131f6ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1153488281
 GameObject:
   m_ObjectHideFlags: 0
@@ -11090,6 +11178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428945531}
+  - component: {fileID: 1428945532}
   m_Layer: 0
   m_Name: Sitting (5)
   m_TagString: Untagged
@@ -11114,6 +11203,27 @@ Transform:
   - {fileID: 1780752893}
   m_Father: {fileID: 166900773}
   m_LocalEulerAnglesHint: {x: 0, y: -448.963, z: 0}
+--- !u!95 &1428945532
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428945530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b24920d958227d64ebac481eeb0dd974, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1432155185
 GameObject:
   m_ObjectHideFlags: 0
@@ -14139,6 +14249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1894935814}
+  - component: {fileID: 1894935815}
   m_Layer: 0
   m_Name: Sitting Gun Motion (1)
   m_TagString: Untagged
@@ -14163,6 +14274,27 @@ Transform:
   - {fileID: 578076968}
   m_Father: {fileID: 166900773}
   m_LocalEulerAnglesHint: {x: 0, y: -83.296, z: 0}
+--- !u!95 &1894935815
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894935813}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 124ce075910e487489c96137520ff3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1906565231
 GameObject:
   m_ObjectHideFlags: 0
@@ -16350,6 +16482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 253947254134191217}
+  - component: {fileID: 634412721213468364}
   m_Layer: 0
   m_Name: Sitting (4)
   m_TagString: Untagged
@@ -16357,6 +16490,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &634412721213468364
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634412721213468363}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e04eda97fd28ca4f8e6bc4ca9e8df1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &746925793739623980
 Transform:
   m_ObjectHideFlags: 0
@@ -16492,6 +16646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652391631248}
+  - component: {fileID: 919132148188951339}
   m_Layer: 0
   m_Name: Female Sitting Pose (2)
   m_TagString: Untagged
@@ -16499,6 +16654,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &919132148188951339
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148188951338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 613ad043b6df04c4fb53c2f0e5aeb78b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &919132149202710546
 GameObject:
   m_ObjectHideFlags: 0
@@ -16508,6 +16684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450653661211304}
+  - component: {fileID: 919132149202710547}
   m_Layer: 0
   m_Name: Sitting Gun Motion
   m_TagString: Untagged
@@ -16515,6 +16692,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &919132149202710547
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149202710546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 124ce075910e487489c96137520ff3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &941196709489835036
 Transform:
   m_ObjectHideFlags: 0
@@ -17137,6 +17335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684916300083972007}
+  - component: {fileID: 2029389357092511006}
   m_Layer: 0
   m_Name: Female Sitting Pose
   m_TagString: Untagged
@@ -17144,6 +17343,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &2029389357092511006
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029389357092511005}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 29ff1f50917f6e4489fb645abfdd345c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &2119964857641692048
 Transform:
   m_ObjectHideFlags: 0
