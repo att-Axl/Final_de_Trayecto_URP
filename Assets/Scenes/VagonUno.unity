@@ -24519,7 +24519,7 @@ MonoBehaviour:
   alturaNormal: 1
   alturaAgachado: 0.4
   velocidadTransicion: 5
-  sensibilidadMouse: 300
+  sensibilidadMouse: 100
   cameraHolder: {fileID: 514788013}
   alturaCamaraNormal: 1
   alturaCamaraAgachado: 0.5

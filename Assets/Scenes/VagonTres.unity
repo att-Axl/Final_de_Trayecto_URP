@@ -6782,7 +6782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomEscena: VagonCuatro
   distanciaMaxima: 2
-  textoE: {fileID: 0}
+  textoE: {fileID: 1704622476}
 --- !u!1 &1634206498
 GameObject:
   m_ObjectHideFlags: 0
