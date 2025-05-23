@@ -9,6 +9,7 @@ TagManager:
   - Silla
   - Llave
   - npc
+  - Paloma
   layers:
   - Default
   - TransparentFX
