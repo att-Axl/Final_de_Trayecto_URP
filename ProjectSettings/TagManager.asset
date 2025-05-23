@@ -8,6 +8,8 @@ TagManager:
   - Puerta
   - Silla
   - Llave
+  - npc
+  - Paloma
   layers:
   - Default
   - TransparentFX

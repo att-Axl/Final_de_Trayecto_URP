@@ -23,9 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VagonCuatro.unity
     guid: 1d0dd08d4b015444484c2ba6065031b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RefVagonCinco.unity
     guid: fe1a6bb4c361d9b47a018f8d3883eb84
+  - enabled: 1
+    path: Assets/Scenes/EstacionFinal.unity
+    guid: 3cc56cca99c6c0846aa0089c442463fd
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 2ab55ddb5842ae0409f080c190898409
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e779c9fc235a65646a6609436727e7ea,
       type: 2}

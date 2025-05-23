@@ -539,9 +539,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 36897043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10eee9931dfe96c448c3a5c4dadcb0fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2a3e5099edc2d541a91dd18c3592815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanciaMaxima: 5
+  mensajeNecesitasLlave: {fileID: 0}
+  Door_A: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &37694263
 GameObject:
   m_ObjectHideFlags: 0
