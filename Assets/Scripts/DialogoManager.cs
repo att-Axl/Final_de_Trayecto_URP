@@ -23,6 +23,9 @@ public class DialogoManager : MonoBehaviour
     private Transform camaraJugador;
     private Vector3 rotacionOriginalCamara;
 
+    private Rigidbody rbJugador;
+    private PrimeraPersona movimientoJugador;
+
     private void Awake()
     {
         if (Instance == null)
@@ -36,6 +39,13 @@ public class DialogoManager : MonoBehaviour
 
         camaraJugador = Camera.main.transform;
         panelDialogo.SetActive(false);
+
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            rbJugador = jugador.GetComponent<Rigidbody>();
+            movimientoJugador = jugador.GetComponent<PrimeraPersona>();
+        }
     }
 
     public void IniciarDialogo(string[] lineas, Transform objetivo)
@@ -52,6 +62,23 @@ public class DialogoManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        // //Bloquea el movimiento
+        // if (rbJugador != null)
+        // {
+        //     rbJugador.velocity = Vector3.zero;
+        //     rbJugador.constraints = RigidbodyConstraints.FreezePositionX |
+        //                            RigidbodyConstraints.FreezePositionY |
+        //                            RigidbodyConstraints.FreezePositionZ |
+        //                            RigidbodyConstraints.FreezeRotationX |
+        //                            RigidbodyConstraints.FreezeRotationY |
+        //                            RigidbodyConstraints.FreezeRotationZ;
+        // }
+
+        // if (movimientoJugador != null)
+        // {
+        //     movimientoJugador.BloquearControles();
+        // }
 
         StartCoroutine(EnfocarObjetivo());
         SiguienteLinea();
@@ -92,11 +119,24 @@ public class DialogoManager : MonoBehaviour
     private IEnumerator MostrarTexto(string linea)
     {
         textoDialogo.text = "";
+        float velocidadActual = velocidadEscritura;
 
-        foreach (char c in linea)
+       foreach (char c in linea)
         {
             textoDialogo.text += c;
-            yield return new WaitForSeconds(velocidadEscritura);
+            textoDialogo.ForceMeshUpdate();
+
+            //Si se mantiene click, acelera el texto
+            if (Input.GetKey(teclaContinuar))
+            {
+                velocidadActual = Mathf.Max(0.01f, velocidadEscritura - 0.025f);
+            }
+            else
+            {
+                velocidadActual = velocidadEscritura;
+            }
+
+            yield return new WaitForSecondsRealtime(velocidadActual);
         }
 
         iconoContinuar.enabled = true;
@@ -121,6 +161,19 @@ public class DialogoManager : MonoBehaviour
         Cursor.visible = false;
 
         camaraJugador.eulerAngles = rotacionOriginalCamara;
+
+        // //Desbloquea el movimiento
+        // if (rbJugador != null)
+        // {
+        //     rbJugador.velocity = Vector3.zero;
+        //     rbJugador.constraints = RigidbodyConstraints.None;
+        // }
+
+        // if (movimientoJugador != null)
+        // {
+        //     movimientoJugador.DesbloquearControles();
+        // }
+
     }
 
     private bool EstaEnDialogo => Instance != null && Instance.panelDialogo.activeSelf;
