@@ -1127,6 +1127,7 @@ GameObject:
   - component: {fileID: 381531440}
   - component: {fileID: 381531439}
   - component: {fileID: 381531438}
+  - component: {fileID: 381531441}
   m_Layer: 0
   m_Name: AudioManagerObj
   m_TagString: Untagged
@@ -1148,7 +1149,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1256,6 +1257,7 @@ MonoBehaviour:
   Correr: {fileID: 8300000, guid: 7d2233835b67a4ce694e08319c5ec971, type: 3}
   Pasos: {fileID: 8300000, guid: 549888a8f7c124dc18ea1a469ef994b7, type: 3}
   Alien: {fileID: 8300000, guid: c495908784dad41d9a68db0c5966c05c, type: 3}
+  Ambiente: {fileID: 8300000, guid: 9c84fcfd4f81f430a9ae1f87f60b863f, type: 3}
 --- !u!4 &381531440
 Transform:
   m_ObjectHideFlags: 0
@@ -1271,6 +1273,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &381531441
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381531437}
+  m_Enabled: 1
 --- !u!1 &505737133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,7 +4080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1189292481194873711
 GameObject:
   m_ObjectHideFlags: 0
