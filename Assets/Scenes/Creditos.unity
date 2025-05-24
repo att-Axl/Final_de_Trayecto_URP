@@ -930,7 +930,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Programaci\xF3n principal\nIntegraci\xF3n de proyecto\nCreaci\xF3n base
-    en Unity\nAnimaciones generales\nEfectos post producci\xF3n\n"
+    en Unity\nAnimaciones\nEfectos post producci\xF3n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84206e62178088048936e94aea3fa76b, type: 2}
   m_sharedMaterial: {fileID: -7067243312635822684, guid: 84206e62178088048936e94aea3fa76b,
