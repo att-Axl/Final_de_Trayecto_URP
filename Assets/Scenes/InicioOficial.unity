@@ -1904,7 +1904,7 @@ MonoBehaviour:
   Puerta: {fileID: 8300000, guid: eb4a53bd09e584f94913618a1d5915ce, type: 3}
   PuertaMetro: {fileID: 8300000, guid: 05b71d43118824e168f8471d393176ea, type: 3}
   Papel: {fileID: 8300000, guid: 7197ea352214843989fdbb3563879dbf, type: 3}
-  Voces: {fileID: 0}
+  Voces: {fileID: 8300000, guid: 0a67360a0736144b186a0ad01c33c904, type: 3}
   VocesDist: {fileID: 8300000, guid: 75fd1bb2ab795414b901701f1a26aeed, type: 3}
   Paloma: {fileID: 8300000, guid: 1e63c2ea3a54b432db50264293697357, type: 3}
   Luces: {fileID: 8300000, guid: 601d1b210f7854340b2532edde42c57c, type: 3}
@@ -1912,11 +1912,12 @@ MonoBehaviour:
   SigParadaDist: {fileID: 8300000, guid: 0fe7e38a30d8d4f6882633b2563ef9bb, type: 3}
   Correr: {fileID: 8300000, guid: 7d2233835b67a4ce694e08319c5ec971, type: 3}
   Pasos: {fileID: 8300000, guid: 549888a8f7c124dc18ea1a469ef994b7, type: 3}
-  Salto: {fileID: 0}
+  Salto: {fileID: 8300000, guid: 8ce81c7d8ef234f46b5e22e6a25d3275, type: 3}
   Alien: {fileID: 8300000, guid: c495908784dad41d9a68db0c5966c05c, type: 3}
   Ambiente: {fileID: 8300000, guid: 9c84fcfd4f81f430a9ae1f87f60b863f, type: 3}
   Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
-  Gato: {fileID: 0}
+  Gato: {fileID: 8300000, guid: 10b70003283fe40d5bacdda31c96c42d, type: 3}
+  LlegaMetro: {fileID: 8300000, guid: f6eb15b8cdca04009b05223895176df8, type: 3}
 --- !u!4 &722320818
 Transform:
   m_ObjectHideFlags: 0

@@ -23,7 +23,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip Ambiente;
     public AudioClip Susto;
     public AudioClip Gato;
+    public AudioClip LlegaMetro;
     private AudioSource audioPalomaSource;
+    
 
 
     AudioSource _audioSource;
