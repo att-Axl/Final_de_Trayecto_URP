@@ -27,6 +27,7 @@ public class InteractuarNotas : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Papel);
                     mostrandoContenido = !mostrandoContenido;
 
                     if (textCanvas != null)

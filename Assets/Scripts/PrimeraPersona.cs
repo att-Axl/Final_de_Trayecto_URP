@@ -45,6 +45,14 @@ public class PrimeraPersona : MonoBehaviour
 
     // private bool controlesBloqueados = false;
 
+
+    private float tiempoEntrePasos = 0.5f;  // tiempo entre reproduccion de pasos
+    private float tiempoUltimoPaso = 0f;
+
+    private float tiempoEntreCorrer = 0.4f; // tiempo entre sonidos de correr
+    private float tiempoUltimoCorrer = 0f;  
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -119,6 +127,13 @@ public class PrimeraPersona : MonoBehaviour
 
         if (move.magnitude >= 0.1f)
         {
+            
+             if (Time.time - tiempoUltimoPaso > tiempoEntrePasos)
+    {
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Pasos);
+        tiempoUltimoPaso = Time.time;
+    }
+
             Vector3 forward = Vector3.ProjectOnPlane(cam.transform.forward, Vector3.up);
             forward.Normalize();
 
@@ -133,6 +148,11 @@ public class PrimeraPersona : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
                 velocidadActual = velocidadCorrer;
+                if (Time.time - tiempoUltimoCorrer > tiempoEntreCorrer)
+            {
+                AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Correr);
+                tiempoUltimoCorrer = Time.time;
+            }
             }
 
             if (estaAgachado)

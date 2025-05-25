@@ -18,8 +18,12 @@ public class AudioManager : MonoBehaviour
     public AudioClip SigParadaDist;
     public AudioClip Correr;
     public AudioClip Pasos;
+    public AudioClip Salto;
     public AudioClip Alien;
     public AudioClip Ambiente;
+    public AudioClip Susto;
+    public AudioClip Gato;
+
 
     AudioSource _audioSource;
 
