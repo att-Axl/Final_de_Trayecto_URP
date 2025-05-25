@@ -21,7 +21,7 @@ public class Interfaces : MonoBehaviour
 
 
     public void StartGame(){
-        SceneManager.LoadScene("EstacionBase");
+        SceneManager.LoadScene("TextoInicio");
     }
     public void ExitGame(){
         Debug.Log("Exit");
