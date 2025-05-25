@@ -7764,7 +7764,7 @@ MonoBehaviour:
   Llaves: {fileID: 8300000, guid: 4b9be20c7ebcd4aff903d08b0928cddd, type: 3}
   Puerta: {fileID: 0}
   PuertaMetro: {fileID: 8300000, guid: 05b71d43118824e168f8471d393176ea, type: 3}
-  Papel: {fileID: 0}
+  Papel: {fileID: 8300000, guid: 7197ea352214843989fdbb3563879dbf, type: 3}
   Voces: {fileID: 0}
   VocesDist: {fileID: 0}
   Paloma: {fileID: 0}

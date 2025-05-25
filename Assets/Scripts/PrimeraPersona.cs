@@ -51,6 +51,7 @@ public class PrimeraPersona : MonoBehaviour
 
     private float tiempoEntreCorrer = 0.4f; // tiempo entre sonidos de correr
     private float tiempoUltimoCorrer = 0f;  
+    private bool estabaMoviendose = false;
 
 
     void Start()
@@ -128,11 +129,18 @@ public class PrimeraPersona : MonoBehaviour
         if (move.magnitude >= 0.1f)
         {
             
-             if (Time.time - tiempoUltimoPaso > tiempoEntrePasos)
-    {
-        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Pasos);
-        tiempoUltimoPaso = Time.time;
-    }
+             if (!estabaMoviendose){
+
+                tiempoUltimoPaso = Time.time;
+            }
+
+            if (Time.time - tiempoUltimoPaso > tiempoEntrePasos){
+
+                 AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Pasos);
+                tiempoUltimoPaso = Time.time;
+            }
+
+        estabaMoviendose = true;
 
             Vector3 forward = Vector3.ProjectOnPlane(cam.transform.forward, Vector3.up);
             forward.Normalize();
@@ -165,6 +173,7 @@ public class PrimeraPersona : MonoBehaviour
         else
         {
             rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
+            estabaMoviendose = false;
         }
     }
 
