@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioClip BotonUno;
+    public AudioClip Boton1;
     public AudioClip Llaves;
     public AudioClip Puerta;
     public AudioClip PuertaMetro;
@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     AudioSource _audioSource;
 
     public static AudioManager Instance;
-    void Awke(){
+    void Awake(){
 
         if(Instance != null && Instance != this){
             Destroy(this);
@@ -52,4 +52,11 @@ public class AudioManager : MonoBehaviour
     {
         
     }
+
+    //Esto hace sonar los clips
+    public void SonarClipUnaVez(AudioClip ac){
+        _audioSource.PlayOneShot(ac);
+    }
+
+
 }

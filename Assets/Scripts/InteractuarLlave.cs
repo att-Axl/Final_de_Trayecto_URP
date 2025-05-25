@@ -35,6 +35,7 @@ public class InteractuarLlave : MonoBehaviour
                     tieneLlave = true;
 
                     Time.timeScale = mostrandoContenido ? 0f : 1f;
+                    AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Llaves);
 
                     if (!mostrandoContenido && LlaveActual != null)
                     {
