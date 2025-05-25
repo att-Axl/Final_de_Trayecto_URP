@@ -19,6 +19,7 @@ public class Desaparece : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Susto);
             gameObject.SetActive(false); 
         }
     }

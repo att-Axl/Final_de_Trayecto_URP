@@ -42,6 +42,7 @@ public class InteractuarPuerta : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Puerta);
                     if (InteractuarLlave.tieneLlave)
                     {
                         Debug.Log("Tienes llave. Puerta abierta.");

@@ -37,7 +37,7 @@ public void Update(){
 
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         rb.AddForce(Vector3.up * fuerzaDeSalto, ForceMode.VelocityChange);
-        
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Salto);
     }
 
     bool DetectarSuelo()
