@@ -158,7 +158,7 @@ public class DialogoManager : MonoBehaviour
 
     private void FinalizarDialogo()
     {
-        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.PuertaMetro);
+        Invoke("SonarPuerta", 2f);
         panelDialogo.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
@@ -181,4 +181,9 @@ public class DialogoManager : MonoBehaviour
     }
 
     private bool EstaEnDialogo => Instance != null && Instance.panelDialogo.activeSelf;
+
+    private void SonarPuerta(){
+        AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.PuertaMetro);
+    }
+
 }
