@@ -1915,7 +1915,7 @@ MonoBehaviour:
   Salto: {fileID: 0}
   Alien: {fileID: 8300000, guid: c495908784dad41d9a68db0c5966c05c, type: 3}
   Ambiente: {fileID: 8300000, guid: 9c84fcfd4f81f430a9ae1f87f60b863f, type: 3}
-  Susto: {fileID: 8300000, guid: d0ddd4618b9d549818994a462620dfdc, type: 3}
+  Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
   Gato: {fileID: 0}
 --- !u!4 &722320818
 Transform:

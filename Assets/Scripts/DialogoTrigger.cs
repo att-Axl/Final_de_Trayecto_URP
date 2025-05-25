@@ -40,6 +40,7 @@ public class DialogoTrigger : MonoBehaviour
     private void StartDialogue()
     {
         isInDialogue = true;
+        //AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Paloma);
         DialogoManager.Instance.IniciarDialogo(dialogueLines, lookAtTarget);
     }
 }

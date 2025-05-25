@@ -2881,7 +2881,7 @@ MonoBehaviour:
   Salto: {fileID: 8300000, guid: 8ce81c7d8ef234f46b5e22e6a25d3275, type: 3}
   Alien: {fileID: 0}
   Ambiente: {fileID: 0}
-  Susto: {fileID: 8300000, guid: d0ddd4618b9d549818994a462620dfdc, type: 3}
+  Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
   Gato: {fileID: 0}
 --- !u!4 &557500991
 Transform:
@@ -7748,6 +7748,7 @@ MonoBehaviour:
   nomEscena: EstacionFinal
   distanciaMaxima: 2
   textoE: {fileID: 1704622476}
+  fadeDuration: 1
 --- !u!1 &1634206498
 GameObject:
   m_ObjectHideFlags: 0

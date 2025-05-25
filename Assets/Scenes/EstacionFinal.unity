@@ -4412,7 +4412,7 @@ MonoBehaviour:
   Papel: {fileID: 8300000, guid: 7197ea352214843989fdbb3563879dbf, type: 3}
   Voces: {fileID: 8300000, guid: 0a67360a0736144b186a0ad01c33c904, type: 3}
   VocesDist: {fileID: 8300000, guid: 75fd1bb2ab795414b901701f1a26aeed, type: 3}
-  Paloma: {fileID: 0}
+  Paloma: {fileID: 8300000, guid: 1e63c2ea3a54b432db50264293697357, type: 3}
   Luces: {fileID: 8300000, guid: 601d1b210f7854340b2532edde42c57c, type: 3}
   SigParada: {fileID: 0}
   SigParadaDist: {fileID: 8300000, guid: 0fe7e38a30d8d4f6882633b2563ef9bb, type: 3}

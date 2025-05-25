@@ -50,6 +50,8 @@ public class InteractuarPuerta : MonoBehaviour
                         {
                             animator.SetBool("PuertaDingus", true);
                             PuertaDingus = true;
+                            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Puerta);
+                            AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Gato);
                         }
                     }
                     else

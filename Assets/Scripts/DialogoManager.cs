@@ -25,6 +25,7 @@ public class DialogoManager : MonoBehaviour
 
     private Rigidbody rbJugador;
     private PrimeraPersona movimientoJugador;
+    
 
     private void Awake()
     {
@@ -104,11 +105,13 @@ public class DialogoManager : MonoBehaviour
 
     private void SiguienteLinea()
     {
+       
         if (indiceLineaActual >= lineasActuales.Length)
         {
             FinalizarDialogo();
             return;
         }
+        AudioManager.Instance.ReproducirAudioPaloma();
 
         StopAllCoroutines();
         StartCoroutine(MostrarTexto(lineasActuales[indiceLineaActual]));

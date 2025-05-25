@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Ambiente;
     public AudioClip Susto;
     public AudioClip Gato;
+    private AudioSource audioPalomaSource;
 
 
     AudioSource _audioSource;
@@ -36,7 +37,9 @@ public class AudioManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-        
+        audioPalomaSource = gameObject.AddComponent<AudioSource>();
+    audioPalomaSource.clip = Paloma;
+    audioPalomaSource.loop = false;
     }
 
 
@@ -60,6 +63,14 @@ public class AudioManager : MonoBehaviour
     //Esto hace sonar los clips
     public void SonarClipUnaVez(AudioClip ac){
         _audioSource.PlayOneShot(ac);
+    }
+
+    public void ReproducirAudioPaloma(){
+    if(audioPalomaSource.isPlaying)
+    {
+        audioPalomaSource.Stop();  // Para el sonido si está sonando
+    }
+    audioPalomaSource.Play();
     }
 
 
