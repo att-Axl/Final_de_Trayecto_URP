@@ -6,25 +6,25 @@ public class PrimeraPersona : MonoBehaviour
 {
     // Movimiento
     public float velocidadMovimiento = 5f;
-    public float velocidadCorrer = 10f; 
+    public float velocidadCorrer = 10f;
     public float gravedadExtra = -9.81f;
 
     public float velocidadAgachado = 2.5f;
 
     private bool isGrounded;
-    
+
     public Transform controlDeSuelo;
     public float alturaDelPie = 0.2f;
 
     // Agacharse
-    public float alturaNormal = 1f;      
-    public float alturaAgachado = 0.4f;   
-    private bool estaAgachado = false;  
+    public float alturaNormal = 1f;
+    public float alturaAgachado = 0.4f;
+    private bool estaAgachado = false;
 
     // Transición
-    public float velocidadTransicion = 5f; 
+    public float velocidadTransicion = 5f;
     private float alturaDeseada;
-   
+
 
     // Mirada
     public float sensibilidadMouse = 200f;
@@ -42,6 +42,8 @@ public class PrimeraPersona : MonoBehaviour
     private float alturaCamaraInicial;
 
     private Salto scriptSalto;
+
+    // private bool controlesBloqueados = false;
 
     void Start()
     {
@@ -62,7 +64,7 @@ public class PrimeraPersona : MonoBehaviour
     void Update()
     {
         Mirada();
-        
+
         //DetectarSuelo();
 
 
@@ -82,7 +84,7 @@ public class PrimeraPersona : MonoBehaviour
         Movimiento();
         AplicarGravedad();
 
-            
+
         CapsuleCollider col = GetComponent<CapsuleCollider>();
         if (col != null)
         {
@@ -191,4 +193,14 @@ public class PrimeraPersona : MonoBehaviour
         }
         */
     }
+    // public void BloquearControles()
+    // {
+    //     controlesBloqueados = true;
+    // }
+
+    // public void DesbloquearControles()
+    // {
+    //     controlesBloqueados = false;
+    // }
+    
 }

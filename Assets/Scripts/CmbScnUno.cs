@@ -11,7 +11,7 @@ public class CmbScnUno : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(VagonUno);
+            SceneFader.instance.FadeAndLoadScene(VagonUno);
         }
     }
 }
