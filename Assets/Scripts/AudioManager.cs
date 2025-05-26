@@ -24,6 +24,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip Susto;
     public AudioClip Gato;
     public AudioClip LlegaMetro;
+    public GameObject MusicObj;
+    AudioSource audioMusic;
     private AudioSource audioPalomaSource;
     
 
@@ -51,9 +53,11 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         _audioSource = this.GetComponent<AudioSource>();
-        _audioSource.clip = Ambiente;
-        _audioSource.loop = true;
-        _audioSource.Play();
+        audioMusic = MusicObj.GetComponent<AudioSource>();
+        audioMusic.clip = Ambiente;
+        audioMusic.loop = true;
+        audioMusic.Play();
+    
     }
 
     // Update is called once per frame
