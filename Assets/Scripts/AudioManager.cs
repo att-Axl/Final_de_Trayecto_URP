@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip Salto;
     public AudioClip Alien;
     public AudioClip Ambiente;
+    public AudioClip AmbienteMetro;
     public AudioClip Susto;
     public AudioClip Gato;
     public AudioClip LlegaMetro;

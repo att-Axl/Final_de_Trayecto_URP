@@ -2143,14 +2143,11 @@ MonoBehaviour:
   Salto: {fileID: 8300000, guid: 8ce81c7d8ef234f46b5e22e6a25d3275, type: 3}
   Alien: {fileID: 8300000, guid: c495908784dad41d9a68db0c5966c05c, type: 3}
   Ambiente: {fileID: 8300000, guid: 9c84fcfd4f81f430a9ae1f87f60b863f, type: 3}
+  AmbienteMetro: {fileID: 8300000, guid: 2d53226ade82846658f3197c0cbbfaaa, type: 3}
   Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
   Gato: {fileID: 8300000, guid: 10b70003283fe40d5bacdda31c96c42d, type: 3}
   LlegaMetro: {fileID: 8300000, guid: f6eb15b8cdca04009b05223895176df8, type: 3}
-<<<<<<< HEAD
-  MusicObj: {fileID: 1457256082}
-=======
   MusicObj: {fileID: 625435013}
->>>>>>> 334feed (escenas de prueba para poner todos los sonidos)
 --- !u!4 &722320818
 Transform:
   m_ObjectHideFlags: 0
@@ -2575,9 +2572,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: ddb0d9dacf5991a47a0bdc17792ed2d4, type: 2}
   musicaSlider: {fileID: 2014244838}
-  efectosSlider: {fileID: 28170030}
-  vocesSlider: {fileID: 2130203379}
-  generalSlider: {fileID: 667572763}
 --- !u!1 &1063418165
 GameObject:
   m_ObjectHideFlags: 0
