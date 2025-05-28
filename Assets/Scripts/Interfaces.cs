@@ -6,14 +6,18 @@ using UnityEngine.SceneManagement;
 public class Interfaces : MonoBehaviour
 {
     GameObject panelAjustes;
+    GameObject panelControles;
     // Start is called before the first frame update
     void Start()
     {
         panelAjustes = GameObject.Find("PanelAjustes");
+        panelControles = GameObject.Find("PanelControles");
         panelAjustes.SetActive(false);
+        panelControles.SetActive(false);
+
     }
 
-    // Update is called once per frame ///
+    // Update is called once per frame 
     void Update()
     {
         
@@ -36,7 +40,17 @@ public class Interfaces : MonoBehaviour
         panelAjustes.SetActive(false);
     }
 
-    public void SuenaBoton(){
+    public void MostrarControles(){
+        panelControles.SetActive(true);
+    }
+
+    public void OcultarControles(){
+        panelControles.SetActive(false);
+    }
+
+
+    public void SuenaBoton()
+    {
         AudioManager.Instance.SonarClipUnaVez(AudioManager.Instance.Boton1);
     }
 

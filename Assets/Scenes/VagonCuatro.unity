@@ -537,7 +537,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.89433956, g: 0.07071927, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.34509805, b: 0.34509805, a: 1}
   m_Intensity: 10
   m_Range: 5.177802
   m_SpotAngle: 156.0189
@@ -2043,7 +2043,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.89433956, g: 0.07071927, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.34528297, b: 0.34528297, a: 1}
   m_Intensity: 10
   m_Range: 5.1058006
   m_SpotAngle: 147.99042
@@ -2883,6 +2883,8 @@ MonoBehaviour:
   Ambiente: {fileID: 0}
   Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
   Gato: {fileID: 0}
+  LlegaMetro: {fileID: 0}
+  MusicObj: {fileID: 0}
 --- !u!4 &557500991
 Transform:
   m_ObjectHideFlags: 0
@@ -3463,7 +3465,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.89433956, g: 0.07071927, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.34509805, b: 0.34509805, a: 1}
   m_Intensity: 10
   m_Range: 5.1058006
   m_SpotAngle: 166.37082
@@ -4244,7 +4246,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.89433956, g: 0.07071927, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.34509805, b: 0.34509805, a: 1}
   m_Intensity: 10
   m_Range: 5.1058006
   m_SpotAngle: 164.27927
@@ -9170,7 +9172,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.89433956, g: 0.07071927, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.34509805, b: 0.34509805, a: 1}
   m_Intensity: 10
   m_Range: 5.1058006
   m_SpotAngle: 158.56212
