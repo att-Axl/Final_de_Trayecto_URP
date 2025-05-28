@@ -1918,6 +1918,7 @@ MonoBehaviour:
   Susto: {fileID: 8300000, guid: 1b09f4120214f43649dc0955cf443d95, type: 3}
   Gato: {fileID: 8300000, guid: 10b70003283fe40d5bacdda31c96c42d, type: 3}
   LlegaMetro: {fileID: 8300000, guid: f6eb15b8cdca04009b05223895176df8, type: 3}
+  MusicObj: {fileID: 1457256082}
 --- !u!4 &722320818
 Transform:
   m_ObjectHideFlags: 0
