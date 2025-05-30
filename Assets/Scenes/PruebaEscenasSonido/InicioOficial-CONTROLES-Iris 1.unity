@@ -4227,7 +4227,6 @@ GameObject:
   - component: {fileID: 1921375352}
   - component: {fileID: 1921375351}
   - component: {fileID: 1921375350}
-  - component: {fileID: 1921375349}
   m_Layer: 0
   m_Name: AudioManagerObj
   m_TagString: Untagged
@@ -4235,14 +4234,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1921375349
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921375348}
-  m_Enabled: 1
 --- !u!82 &1921375350
 AudioSource:
   m_ObjectHideFlags: 0
