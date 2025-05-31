@@ -1469,6 +1469,7 @@ GameObject:
   - component: {fileID: 1022024738}
   - component: {fileID: 1022024740}
   - component: {fileID: 1022024739}
+  - component: {fileID: 1022024741}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1608,6 +1609,20 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &1022024741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022024733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d168ee7b978451ca0e6288caf2ce1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: ddb0d9dacf5991a47a0bdc17792ed2d4, type: 2}
+  generalSlider: {fileID: 667572763}
 --- !u!1 &1084392203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,7 +3112,6 @@ GameObject:
   - component: {fileID: 1921375352}
   - component: {fileID: 1921375351}
   - component: {fileID: 1921375350}
-  - component: {fileID: 1921375349}
   m_Layer: 0
   m_Name: AudioManagerObj
   m_TagString: Untagged
@@ -3105,14 +3119,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1921375349
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921375348}
-  m_Enabled: 1
 --- !u!82 &1921375350
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3122,7 +3128,7 @@ AudioSource:
   m_GameObject: {fileID: 1921375348}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 2942396922117901723, guid: ddb0d9dacf5991a47a0bdc17792ed2d4,
+  OutputAudioMixerGroup: {fileID: 6037642275714076827, guid: ddb0d9dacf5991a47a0bdc17792ed2d4,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1

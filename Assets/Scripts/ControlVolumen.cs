@@ -7,7 +7,7 @@ using UnityEngine.Audio;
 public class ControlVolumen : MonoBehaviour
 {
     public AudioMixer mixer;
-    public Slider musicaSlider;
+    public Slider generalSlider;
    
 
 
@@ -15,7 +15,7 @@ public class ControlVolumen : MonoBehaviour
 
     private void Awake()
     {
-      musicaSlider.onValueChanged.AddListener(ControlMusicaVolumen);
+      generalSlider.onValueChanged.AddListener(ControlGeneralVolumen);
       
     }
 
@@ -30,9 +30,9 @@ public class ControlVolumen : MonoBehaviour
         
     }
 
-    private void ControlMusicaVolumen(float valor){
-        mixer.SetFloat("VolumenMusica", Mathf.Log10(valor) * 20);
-        PlayerPrefs.SetFloat("VolumenMusica", musicaSlider.value);
+    private void ControlGeneralVolumen(float valor){
+        mixer.SetFloat("VolumenGeneral", Mathf.Log10(valor) * 20);
+        PlayerPrefs.SetFloat("VolumenGeneral", generalSlider.value);
     }
 
 
@@ -40,9 +40,9 @@ public class ControlVolumen : MonoBehaviour
         
 
         private void Cargar(){
-            musicaSlider.value = PlayerPrefs.GetFloat("VolumenMusica", 0.75f);
+            generalSlider.value = PlayerPrefs.GetFloat("VolumenMusica", 0.75f);
         
-            ControlMusicaVolumen(musicaSlider.value);
+            ControlGeneralVolumen(generalSlider.value);
            
         }
 
