@@ -1,36 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SensibilidadRaton : MonoBehaviour
 {
-    private float defaultSensitivity = 100f;
+
+    private float sensibilidad = 100f;
     private Transform playerBody;
 
-    private float currentSensitivity;
+    private float currentSensibilidad;
 
     void Start()
     {
-        currentSensitivity = PlayerPrefs.GetFloat("SensibilidadRaton", defaultSensitivity);
-        
-        //slider.value = currentSensitivity;
+        currentSensibilidad = PlayerPrefs.GetFloat("SensibilidadRaton", sensibilidad);
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * currentSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * currentSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * currentSensibilidad * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * currentSensibilidad * Time.deltaTime;
 
         transform.localRotation *= Quaternion.Euler(-mouseY, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+
+        if (playerBody != null)
+        {
+            playerBody.Rotate(Vector3.up * mouseX);
+        }
     }
 
-    public void SetSensitivity(float value)
+    public void AjustarSensibilidad(float valor)
     {
-        currentSensitivity = value;
-        PlayerPrefs.SetFloat("SensibilidadRaton", value); 
-        PlayerPrefs.Save(); 
+        currentSensibilidad = valor;
+        PlayerPrefs.SetFloat("SensibilidadRaton", valor);
+        PlayerPrefs.Save();
     }
 }

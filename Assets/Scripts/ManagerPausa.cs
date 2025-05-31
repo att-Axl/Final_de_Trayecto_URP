@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManagerPausa: MonoBehaviour
+public class ManagerPausa : MonoBehaviour
 {
     public static ManagerPausa Instance { get; private set; }
 
-    private GameObject menuDePausaPrefab; 
+    public GameObject canvasAjustesPrefab;
+
     private GameObject menuInstance;
     private bool estaPausado = false;
 
@@ -31,7 +32,6 @@ public class ManagerPausa: MonoBehaviour
         }
     }
 
-
     public void AlternarPausa()
     {
         estaPausado = !estaPausado;
@@ -48,12 +48,17 @@ public class ManagerPausa: MonoBehaviour
 
     private void MostrarMenuDePausa()
     {
-        if (menuDePausaPrefab != null && menuInstance == null)
+    
+        if (menuInstance != null)
         {
-            menuInstance = Instantiate(menuDePausaPrefab);
-            Time.timeScale = 0f; 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            Destroy(menuInstance);
+        }
+
+        if (canvasAjustesPrefab != null)
+        {
+            menuInstance = Instantiate(canvasAjustesPrefab);
+            Time.timeScale = 0f;
+            MostrarRaton(); 
         }
     }
 
@@ -62,15 +67,28 @@ public class ManagerPausa: MonoBehaviour
         if (menuInstance != null)
         {
             Destroy(menuInstance);
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            ReanudarJuego();
         }
     }
+
 
     public void ContinuarJuego()
     {
         estaPausado = false;
         OcultarMenuDePausa();
+    }
+
+
+    public void MostrarRaton()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    private void ReanudarJuego()
+    {
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
