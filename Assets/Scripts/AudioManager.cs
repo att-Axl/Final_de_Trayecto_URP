@@ -43,8 +43,8 @@ public class AudioManager : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
         audioPalomaSource = gameObject.AddComponent<AudioSource>();
-    audioPalomaSource.clip = Paloma;
-    audioPalomaSource.loop = false;
+        audioPalomaSource.clip = Paloma;
+        audioPalomaSource.loop = false;
     }
 
 

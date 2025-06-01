@@ -8,15 +8,11 @@ public class ControlVolumen : MonoBehaviour
 {
     public AudioMixer mixer;
     public Slider generalSlider;
-   
-
-
-    // Start is called before the first frame update
+    public Slider musicaSlider;
 
     private void Awake()
     {
-      generalSlider.onValueChanged.AddListener(ControlGeneralVolumen);
-      
+        generalSlider.onValueChanged.AddListener(ControlGeneralVolumen);
     }
 
     void Start()
@@ -24,28 +20,22 @@ public class ControlVolumen : MonoBehaviour
         Cargar();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ControlGeneralVolumen(float valor)
     {
-        
-    }
-
-    private void ControlGeneralVolumen(float valor){
         mixer.SetFloat("VolumenGeneral", Mathf.Log10(valor) * 20);
-        PlayerPrefs.SetFloat("VolumenGeneral", generalSlider.value);
+        PlayerPrefs.SetFloat("VolumenGeneral", valor);
     }
 
+    private void Cargar()
+    {
+        float volGeneral = PlayerPrefs.GetFloat("VolumenGeneral", 0.75f);
+        float volMusica = PlayerPrefs.GetFloat("VolumenMusica", 0.75f);
 
+        generalSlider.value = volGeneral;
 
-        
+        ControlGeneralVolumen(volGeneral);
 
-        private void Cargar(){
-            generalSlider.value = PlayerPrefs.GetFloat("VolumenMusica", 0.75f);
-        
-            ControlGeneralVolumen(generalSlider.value);
-           
-        }
-
-
-
+        mixer.SetFloat("VolumenMusica", Mathf.Log10(volMusica) * 20);
+        PlayerPrefs.SetFloat("VolumenMusica", volMusica);
+    }
 }

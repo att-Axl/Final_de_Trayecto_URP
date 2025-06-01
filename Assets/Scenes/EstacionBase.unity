@@ -11692,7 +11692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f290b2b823527d6478546c292189ea40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasAjustesPrefab: {fileID: 2716978291555611173, guid: ac3d1bf8000275942b7fa9305b23771e,
+  canvasAjustesPrefab: {fileID: 8556247594591146113, guid: 4892fee087a89414db8ea2ea7087d3f4,
     type: 3}
 --- !u!4 &1218334859
 Transform:
