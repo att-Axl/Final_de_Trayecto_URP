@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/InicioPau.unity
     guid: 2ab55ddb5842ae0409f080c190898409
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/InicioOficial-CONTROLES-Iris.unity
+    guid: 585a53e8603a89e49abae14ab1cf38b3
   - enabled: 1
     path: Assets/Scenes/EstacionBase.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -26,19 +26,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VagonCuatro.unity
     guid: 1d0dd08d4b015444484c2ba6065031b9
-  - enabled: 0
-    path: Assets/Scenes/VagonCinco.unity
-    guid: fe1a6bb4c361d9b47a018f8d3883eb84
-  - enabled: 1
-    path: Assets/Scenes/TextoInicio.unity
-    guid: d580221d77734aa4f90d1e1d5e8000e4
   - enabled: 1
     path: Assets/Scenes/EstacionFinal.unity
     guid: 3cc56cca99c6c0846aa0089c442463fd
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 9d88ac2fbbc40bf418d1155697c1c000
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/VagonCinco.unity
+    guid: fe1a6bb4c361d9b47a018f8d3883eb84
+  - enabled: 0
+    path: Assets/Scenes/TextoInicio.unity
+    guid: d580221d77734aa4f90d1e1d5e8000e4
+  - enabled: 0
     path: Assets/Scenes/InicioOficial.unity
     guid: f6d9c6f8061c30f41963ff7546142f7e
   m_configObjects:

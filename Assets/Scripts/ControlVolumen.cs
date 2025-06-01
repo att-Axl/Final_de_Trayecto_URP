@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class ControlVolumen : MonoBehaviour
 {
     public AudioMixer mixer;
     public Slider generalSlider;
-    public Slider musicaSlider;
 
     private void Awake()
     {
-        generalSlider.onValueChanged.AddListener(ControlGeneralVolumen);
+
+        generalSlider.onValueChanged.AddListener(ControlAmbosVolúmenes);
     }
 
     void Start()
@@ -20,22 +18,24 @@ public class ControlVolumen : MonoBehaviour
         Cargar();
     }
 
-    private void ControlGeneralVolumen(float valor)
+    private void ControlAmbosVolúmenes(float valor)
     {
-        mixer.SetFloat("VolumenGeneral", Mathf.Log10(valor) * 20);
+        float dB = valor <= 0.0001f ? -80f : Mathf.Log10(valor) * 20f;
+
+        mixer.SetFloat("VolumenGeneral", dB);
+        mixer.SetFloat("Musica", dB);
+        mixer.SetFloat("Efectos", dB);
+
         PlayerPrefs.SetFloat("VolumenGeneral", valor);
+        PlayerPrefs.SetFloat("Musica", valor);
+        PlayerPrefs.SetFloat("Efectos", valor);
     }
 
     private void Cargar()
     {
-        float volGeneral = PlayerPrefs.GetFloat("VolumenGeneral", 0.75f);
-        float volMusica = PlayerPrefs.GetFloat("VolumenMusica", 0.75f);
+        float savedVolume = PlayerPrefs.GetFloat("VolumenGeneral", 0.75f);
+        generalSlider.value = savedVolume;
 
-        generalSlider.value = volGeneral;
-
-        ControlGeneralVolumen(volGeneral);
-
-        mixer.SetFloat("VolumenMusica", Mathf.Log10(volMusica) * 20);
-        PlayerPrefs.SetFloat("VolumenMusica", volMusica);
+        ControlAmbosVolúmenes(savedVolume);
     }
 }

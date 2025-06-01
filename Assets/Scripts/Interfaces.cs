@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +6,7 @@ public class Interfaces : MonoBehaviour
 {
     GameObject panelAjustes;
     GameObject panelControles;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class Interfaces : MonoBehaviour
 
 
     public void StartGame(){
-        SceneManager.LoadScene("TextoInicio");
+        SceneManager.LoadScene("EstacionBase");
     }
     public void ExitGame(){
         Debug.Log("Exit");
