@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/InicioPau.unity
     guid: 2ab55ddb5842ae0409f080c190898409
   - enabled: 1
-    path: Assets/Scenes/InicioOficial-CONTROLES-Iris.unity
+    path: Assets/Scenes/InicioOficialFinal.unity
     guid: 585a53e8603a89e49abae14ab1cf38b3
   - enabled: 1
     path: Assets/Scenes/EstacionBase.unity

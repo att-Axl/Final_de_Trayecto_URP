@@ -16,6 +16,6 @@ public class VueltaMenu : MonoBehaviour
     {
 
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("InicioOficial");
+        SceneManager.LoadScene("InicioOficialFinal");
     }
 }
